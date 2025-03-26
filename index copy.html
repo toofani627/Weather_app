@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Webapp</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-left1.css">
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <i class="ri-menu-line"></i>
+            <h2>Sky Cast</h2>
+            <div class="locate">
+                <i class="ri-map-pin-2-line"></i>
+                <h4>Delhi, India</h4>
+            </div>
+            <div class="search">
+                <i class="ri-search-line"></i>
+                <input type="text" placeholder="Search Location">
+                <i class="ri-focus-3-line"></i>
+            </div>
+            <button>
+                <i class="ri-sun-line"></i>
+                Light
+            </button>
+            <i class="ri-notification-line"></i>
+            <i class="ri-settings-2-line"></i>
+            <div class="user">
+                <img src="avatar.png" alt="">
+                <h5>Shashank</h5>
+                <i class="ri-arrow-down-s-line"></i>
+            </div>
+        </nav>
+       <div class="center">
+        <div class="left">
+           <div class="left1">
+            <div class="left1-top">
+                <h4>Current</h4>
+                <h5 class="time"></h5>
+            </div>
+            <div class="left1-mid">
+                <img src="weather Images/sunny.png" alt="">
+                <h3 class="temp">12 <sup>F</sup></h3>
+                <div class="feels-like">
+                    <h2 class="feels-like-text">Rainy</h2>
+                    <h3>Feels like <span>35</span></h3>
+                </div>
+            </div>
+            <div class="left1-bottom">
+                <h3 class="text">Lorem ipsum dolor sit amet.</h3>
+            </div>
+
+           </div>
+           <div class="left2">
+                <div class="wind card">
+                    <div class="left2-card-top">
+                        <img src="weather Images/humidity.png" alt="">
+                        <h4>Wind</h4>
+                    </div>
+                    <h2 id="wind">Hello world</h2>
+
+                </div>
+                <div class="humidity card">
+                    <div class="left2-card-top">
+                        <img src="weather Images/humidity.png" alt="">
+                        <h4>Humidity</h4>
+                    </div>
+                    <h2 id="humidity">Hello world</h2>
+
+                </div>
+                <div class="visibility card">
+                    <div class="left2-card-top">
+                        <img src="weather Images/humidity.png" alt="">
+                        <h4>visibility</h4>
+                    </div>
+                    <h2 id="Visibility">Hello world</h2>
+
+                </div>
+                <div class="pressure card">
+                    <div class="left2-card-top">
+                        <img src="weather Images/humidity.png" alt="">
+                        <h4>Pressure</h4>
+                    </div>
+                    <h2 id="Pressure">Hello world</h2>
+
+                </div>
+           </div>
+           <div class="left3">
+            
+           </div>
+        </div>
+        <div class="right">
+         
+        </div>
+       </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

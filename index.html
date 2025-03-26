@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Webapp</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-left1.css">
+    <link rel="stylesheet" href="style-right.css">
+</head>
+<body>
+    <div class="overlay">
+        <div class="box">
+            <div class="textWrapper">
+                <p class="textload">Contacting to Server...</p>
+                <div class="invertbox"></div>
+              </div>
+        </div>
+    </div>
+    <div class="main">
+        <nav>
+            <i class="ri-menu-line"></i>
+            <h2>Sky Cast</h2>
+            <div class="locate">
+                <i class="ri-map-pin-2-line"></i>
+                <h4><span class="city">--</span>
+                <span class="country">--</span></h4>
+            </div>
+            <div class="search">
+                <i class="ri-search-line"></i>
+                <input type="text" placeholder="Search Location">
+                <i class="ri-focus-3-line"></i>
+            </div>
+            <button>
+                <i class="ri-sun-line"></i>
+                Light
+            </button>
+            <i class="ri-notification-line"></i>
+            <i class="ri-settings-2-line"></i>
+            <div class="user">
+                <img src="avatar.png" alt="">
+                <h5>Shashank</h5>
+                <i class="ri-arrow-down-s-line"></i>
+            </div>
+        </nav>
+       <div class="center">
+        <div class="left">
+           <div class="left1">
+            <div class="left1-top">
+                <h4 class="time-head">Current Time of Location : </h4>
+                <h5 class="time">6:30 </h5>
+            </div>
+            <div class="left1-mid">
+                <img src="weather Images/sunny.png" alt="" class="main-weather-condition-img">
+                <h3 class="temp">12 <sup>F</sup></h3>
+                <div class="feels-like">
+                    <h2 class="feels-like-text">Rainy</h2>
+                    <h3>Feels like <span class="feels-like-temp">35</span></h3>
+                </div>
+            </div>
+            <div class="left1-bottom">
+                <h3 class="text">Lorem ipsum dolor sit amet.</h3>
+            </div>
+
+           </div>
+           <div class="left2">
+                <div class="wind card">
+                    <div class="left2-card-top">
+                        <i class="ri-menu-4-line"></i>
+                        <h4>Wind</h4>
+                    </div>
+                    <h2 id="wind">--</h2>
+
+                </div>
+                <div class="humidity card">
+                    <div class="left2-card-top">
+                        <i class="ri-drop-line"></i>
+                        <h4>Humidity</h4>
+                    </div>
+                    <h2 id="humidity">--</h2>
+
+                </div>
+                <div class="visibility card">
+                    <div class="left2-card-top">
+                        <i class="ri-eye-line"></i>
+                        <h4>visibility</h4>
+                    </div>
+                    <h2 id="visibility">--</h2>
+
+                </div>
+                <div class="pressure card">
+                    <div class="left2-card-top">
+                        <i class="ri-time-line"></i>
+                        <h4>Pressure</h4>
+                    </div>
+                    <h2 id="pressure">--</h2>
+
+                </div>
+           </div>
+           <div class="left3">
+            <h1>Sun and Moon Summary </h1>
+            <div class="sunrise sun">
+                 <img src="weather Images/sunrise.png" alt="" class="sun-img">
+                 <div class="sun-info">
+                    <!-- <img src="weather Images/sunrise-logo.png" alt=""> -->
+                    <h2> Sunrise</h2>
+                    <h3 id="sunrise-time">5:30 AM</h3>
+                 </div>
+            </div>
+            <div class="sunset sun">
+                  <img src="weather Images/sunset.png" alt="" class="sun-img">
+                  <div class="sun-info">
+                    <!-- <img src="weather Images/sunset-logo.png" alt=""> -->
+                    <h2> Sunset</h2>
+                    <h3 id="sunset-time">6:30 PM</h3>
+                  </div>
+            </div>
+           </div>
+        </div>
+        <div class="right">
+         <div class="head">
+            <h2>Weather Cast</h2>
+            <button>See Weekly Cast</button>
+         </div>
+         <div class="weekly-cast">
+             
+         </div>
+        </div>
+       </div>
+    </div>
+    <!-- <script src="script.js"></script> -->
+     <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,233 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Martel:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    position: absolute;
+}
+
+.main{
+    position: relative;
+    z-index: 1;
+}
+
+.overlay{
+    /* display: none; */
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(94, 94, 94, 0.468);
+    opacity: 1;
+    z-index: 0;
+
+
+}
+
+.overlay .box{
+    width: 30%;
+    margin: 18vw 35vw ;
+    box-shadow: 5px 5px 20px 2px #3f3f3f;;
+    height: 15%;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* From Uiverse.io by Uncannypotato69 */ 
+.textWrapper {
+    height: fit-content;
+    min-width: 3rem;
+    width: fit-content;
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-family: 'popins';
+    letter-spacing: 0.1ch;
+    position: relative;
+    z-index: 0;
+    color: black;
+  }
+  
+  .invertbox {
+    position: absolute;
+    height: 100%;
+    aspect-ratio: 1/1;
+    left: 0;
+    top: 0;
+    border-radius: 20%;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: invert(100%);
+    animation: move 1.8s ease-in-out infinite;
+  }
+  
+  @keyframes move {
+    50% {
+      left: calc(100% - 3rem);
+    }
+}
+  
+
+.right{
+  display: flex;
+  padding: 1% 1.5%;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.head{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8%;
+  /* background-color: rgb(49, 143, 70); */
+}
+.head h2{
+  font-size: 16px;
+  font-weight: 400;
+  /* background-color: blue; */
+  border-bottom: 3px solid rgb(125, 125, 125);
+  border-radius: 2px;
+  padding: 5px 4px;
+}
+
+.head button{
+  padding: 10px 15px ;
+  border: none;
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+  /* letter-spacing: 1.5px; */
+  font-size: 15px;
+}
+.weekly-cast{
+  width: 100%;
+  height: 92%;
+  /* background-color: red; */
+  overflow-y: auto;
+  
+}
+
+
+
+/* Weekly Card Styles */
+
+.weekCastCard{
+  display: flex;
+  width: 100%;
+  height: 20%;
+  justify-content: space-between;
+  /* background-color: red;/   */
+  margin-top: 15px;
+}
+
+.castCard1{
+  gap: 15px;
+  align-items: center;
+  display: flex;
+  /* background-color: rgb(241, 145, 145); */
+  width: 50%;
+  border-right: 2px solid rgb(145, 145, 145);
+}
+
+
+.castCard1-1 h5{
+   font-size: 12px;
+   font-weight: 400;
+   color: rgb(88, 88, 88);
+}
+
+.castCard1-1 h4{
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+
+.weekCastCard img{
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.castCard2{
+  font-size: 10px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: ;
+  gap: 5px;
+  align-items: center;
+  padding: 0px 10px;
+}
+
+.castCard2Top{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.cc2temp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* gap: 20px; */
+  flex-direction: column;
+}
+.cc2temp h3{
+font-size: 12px;
+
+font-weight: 400;
+
+}
+
+.cc2temp h4{
+  font-size: 30px;
+  font-weight: 500;
+}
+.cc2temp{
+  width: 50%;
+}
+
+.castCard2Bottom h2{
+  font-size: 11px;
+  font-weight: 300;
+}
+
+
+
+
+/*  css for scroller */
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(68, 68, 68, 0.1);
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(143, 143, 143, 0.989);
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(181, 181, 181, 0.5);
+}
+
+/* Apply to the scrollable section */
+.scroll-container {
+  max-height: 400px; /* Adjust as needed */
+  overflow-y: auto;
+  padding-right: 10px; /* To avoid content hiding under scrollbar */
+}
